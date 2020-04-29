@@ -7,6 +7,7 @@ import {
 import { MdEmail } from 'react-icons/md';
 import { FaFacebookMessenger } from 'react-icons/fa';
 import Logo from '../../assets/plate.opt.svg';
+import './App.css'
 // import { render } from '@testing-library/react';
 
 class App extends Component {
