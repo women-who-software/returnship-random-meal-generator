@@ -6,6 +6,7 @@ import {
 } from "react-icons/io";
 import { MdEmail } from 'react-icons/md';
 import { FaFacebookMessenger } from 'react-icons/fa';
+import Logo from '../../assets/plate.opt.svg';
 // import { render } from '@testing-library/react';
 
 class App extends Component {
@@ -17,6 +18,7 @@ class App extends Component {
     return (
       <>
         <header>
+          <img src={Logo} alt=''/>
           <h1>Recipe Roulette</h1>
         </header>
         <footer>
