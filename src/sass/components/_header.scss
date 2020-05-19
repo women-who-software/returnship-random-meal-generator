@@ -1,6 +1,7 @@
 .header {
   display: flex;
-  margin-top: 3rem;
+  padding: 3rem 0;
+  background-color: $base-gray;
 
   &-primary {
     color: #A10115;
