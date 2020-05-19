@@ -17,20 +17,20 @@ class App extends Component {
   render() {
     return (
       <>
-        <header class="header">
+        <header className="header">
           <img
             src={Logo}
             alt="Plate setting image for a logo"
-            class="header__logo"
+            className="header__logo"
           />
-          <h1 class="header-primary">Tasty Temptations</h1>
+          <h1 className="header-primary">Tasty Temptations</h1>
         </header>
-        <footer class="footer">
-          <IoLogoPinterest class="footer__img footer__pin"/>
-          <IoLogoTwitter class="footer__img footer__tweet"/>
-          <IoLogoFacebook class="footer__img footer__fb"/>
-          <MdEmail class="footer__img footer__email"/>
-          <FaFacebookMessenger class="footer__img footer__fb-mess"/>
+        <footer className="footer">
+          <IoLogoPinterest className="footer__img footer__pin"/>
+          <IoLogoTwitter className="footer__img footer__tweet"/>
+          <IoLogoFacebook className="footer__img footer__fb"/>
+          <MdEmail className="footer__img footer__email"/>
+          <FaFacebookMessenger className="footer__img footer__fb-mess"/>
         </footer>
       </>
     );
