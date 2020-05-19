@@ -17,7 +17,7 @@ class App extends Component {
 
   render() {
     return (
-      <>
+      <> //should we put div here?
         <header>
           <img src={Logo} alt=''/>
           <h1>Recipe Roulette</h1>
