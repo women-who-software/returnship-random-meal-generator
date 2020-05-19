@@ -14,58 +14,61 @@ const Form = () => {
           type="text"
         />
       </div>
-      <div className="diet__checkbox--box">
-        <div className="diet__checkbox--gluten-free">
+      <div className="search-form__checkbox--container">
+        <div className="search-form__checkbox--gluten-free">
           <input
             id="gluten-free"
-            className="diet__checkbox--input"
+            className="search-form__checkbox-input"
             type="checkbox"
           />
-          <label for="gluten-free" className="diet__checkbox--label">
+          <label for="gluten-free" className="search-form__checkbox-label">
             Gluten Free
           </label>
         </div>
-        <div className="diet__checkbox--dairy-free">
+        <div className="search-form__checkbox--dairy-free">
           <input
             id="dairy-free"
-            className="diet__checkbox--input"
+            className="search-form__checkbox-input"
             type="checkbox"
           />
-          <label for="dairy-free" className="diet__checkbox--label">
+          <label for="dairy-free" className="search-form__checkbox-label">
             Dairy Free
           </label>
         </div>
-        <div className="diet__checkbox--pescatarian">
+        <div className="search-form__checkbox--pescatarian">
           <input
             id="pescatarian"
-            className="diet__checkbox--input"
+            className="search-form__checkbox-input"
             type="checkbox"
           />
-          <label for="pescatarian" className="diet__checkbox--label">
+          <label for="pescatarian" className="search-form__checkbox-label">
             Pescatarian
           </label>
         </div>
-        <div className="diet__checkbox--vegetarian">
+        <div className="search-form__checkbox--vegetarian">
           <input
             id="vegetarian"
-            className="diet__checkbox--input"
+            className="search-form__checkbox-input"
             type="checkbox"
           />
-          <label for="vegetarian" className="diet__checkbox--label">
+          <label for="vegetarian" className="search-form__checkbox-label">
             Vegetarian
           </label>
         </div>
-        <div className="diet__checkbox--vegan">
-          <input id="vegan" className="diet__checkbox--input" type="checkbox" />
-          <label for="vegan" className="diet__checkbox--label">
+        <div className="search-form__checkbox--vegan">
+          <input id="vegan" className="search-form__checkbox-input" type="checkbox" />
+          <label for="vegan" className="search-form__checkbox-label">
             Vegan
           </label>
         </div>
-        <div className="diet__checkbox--keto">
-          <input id="keto" className="diet__checkbox--input" type="checkbox" />
-          <label for="keto" className="diet__checkbox--label">
+        <div className="search-form__checkbox--keto">
+          <input id="keto" className="search-form__checkbox-input" type="checkbox" />
+          <label for="keto" className="search-form__checkbox-label">
             Keto
           </label>
+        </div>
+        <div className="search-form__button--container">
+          <button className="search-form__button">Submit</button>
         </div>
       </div>
     </form>
