@@ -1,13 +1,11 @@
 import React from "react";
+import { IoMdCheckmark } from "react-icons/io";
 
 const Form = () => {
   return (
     <form className="search-form">
       <div className="search-form--specification">
-        <label
-          for="ingredient"
-          className="search-form__label"
-        >
+        <label for="ingredient" className="search-form__label">
           Ingredient:
         </label>
         <input
@@ -25,7 +23,7 @@ const Form = () => {
             type="checkbox"
           />
           <label for="gluten-free" className="search-form__checkbox-label">
-          <span className="search-form__checkbox-btn"></span>
+            <span className="search-form__checkbox-btn search-form__checkbox-org"></span>
             Gluten Free
           </label>
         </div>
@@ -36,7 +34,7 @@ const Form = () => {
             type="checkbox"
           />
           <label for="dairy-free" className="search-form__checkbox-label">
-          <span className="search-form__checkbox-btn"></span>
+            <span className="search-form__checkbox-btn search-form__checkbox-red"></span>
             Dairy Free
           </label>
         </div>
@@ -47,7 +45,7 @@ const Form = () => {
             type="checkbox"
           />
           <label for="pescatarian" className="search-form__checkbox-label">
-          <span className="search-form__checkbox-btn"></span>
+            <span className="search-form__checkbox-btn search-form__checkbox-gry"></span>
             Pescatarian
           </label>
         </div>
@@ -58,7 +56,7 @@ const Form = () => {
             type="checkbox"
           />
           <label for="vegetarian" className="search-form__checkbox-label">
-          <span className="search-form__checkbox-btn"></span>
+            <span className="search-form__checkbox-btn search-form__checkbox-org"></span>
             Vegetarian
           </label>
         </div>
@@ -69,7 +67,7 @@ const Form = () => {
             type="checkbox"
           />
           <label for="vegan" className="search-form__checkbox-label">
-          <span className="search-form__checkbox-btn"></span>
+            <span className="search-form__checkbox-btn search-form__checkbox-red"></span>
             Vegan
           </label>
         </div>
@@ -80,7 +78,7 @@ const Form = () => {
             type="checkbox"
           />
           <label for="keto" className="search-form__checkbox-label">
-          <span className="search-form__checkbox-btn"></span>
+            <span className="search-form__checkbox-btn search-form__checkbox-gry"></span>
             Keto
           </label>
         </div>
