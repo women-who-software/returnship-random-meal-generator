@@ -4,8 +4,11 @@ const Form = () => {
   return (
     <form className="search-form">
       <div className="search-form--specification">
-        <label for="ingredient" className="search-form__label">
-          Ingredients:
+        <label
+          for="ingredient"
+          className="search-form__label"
+        >
+          Ingredient:
         </label>
         <input
           id="ingredient"
@@ -22,6 +25,7 @@ const Form = () => {
             type="checkbox"
           />
           <label for="gluten-free" className="search-form__checkbox-label">
+          <span className="search-form__checkbox-btn"></span>
             Gluten Free
           </label>
         </div>
@@ -32,6 +36,7 @@ const Form = () => {
             type="checkbox"
           />
           <label for="dairy-free" className="search-form__checkbox-label">
+          <span className="search-form__checkbox-btn"></span>
             Dairy Free
           </label>
         </div>
@@ -42,6 +47,7 @@ const Form = () => {
             type="checkbox"
           />
           <label for="pescatarian" className="search-form__checkbox-label">
+          <span className="search-form__checkbox-btn"></span>
             Pescatarian
           </label>
         </div>
@@ -52,18 +58,29 @@ const Form = () => {
             type="checkbox"
           />
           <label for="vegetarian" className="search-form__checkbox-label">
+          <span className="search-form__checkbox-btn"></span>
             Vegetarian
           </label>
         </div>
         <div className="search-form__checkbox--vegan">
-          <input id="vegan" className="search-form__checkbox-input" type="checkbox" />
+          <input
+            id="vegan"
+            className="search-form__checkbox-input"
+            type="checkbox"
+          />
           <label for="vegan" className="search-form__checkbox-label">
+          <span className="search-form__checkbox-btn"></span>
             Vegan
           </label>
         </div>
         <div className="search-form__checkbox--keto">
-          <input id="keto" className="search-form__checkbox-input" type="checkbox" />
+          <input
+            id="keto"
+            className="search-form__checkbox-input"
+            type="checkbox"
+          />
           <label for="keto" className="search-form__checkbox-label">
+          <span className="search-form__checkbox-btn"></span>
             Keto
           </label>
         </div>

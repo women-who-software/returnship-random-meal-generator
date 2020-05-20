@@ -1,3 +1,59 @@
 .search-form {
-  margin: 30px;//temporary
+  margin: 30px; //temporary
+  font-size: 2.1rem;
+
+  &--specification {
+    display: flex;
+    align-items: center;
+    margin-bottom: $heading-bottom-margin;
+  }
+
+  &__label {
+    letter-spacing: $letter-spacing-wide;
+  }
+
+  &__input {
+    background-color: $lightest-gray;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    color: $base-gray;
+    height: 3rem;
+    letter-spacing: $letter-spacing-mild;
+    padding-left: .8rem;
+    width: 25rem;
+  }
+
+  &__checkbox {
+
+    &-label {
+      margin-left: 1.8rem;
+      letter-spacing: $letter-spacing-mild;
+      cursor: pointer;
+      position: relative;
+    }
+
+    &-input {
+      opacity: 0;
+
+      // &::after {
+      //   content: "";
+      //   display: block;
+      //   // opacity: ;
+      // }
+    }
+
+    &-btn {
+      height: 2.8rem;
+      width: 2.8rem;
+      background-color: $base-red;
+      border-radius: 50%;
+      display: inline-block;
+      position: absolute;
+      left: -3.9rem;
+      top: -8%;
+      margin-bottom: .2rem;
+      z-index: -1;
+    }
+  }
 }
