@@ -1,15 +1,18 @@
 .search-form {
-  margin: 30px; //temporary
+  margin: 5%;
   font-size: 2.1rem;
+  width: 49%;
 
   &--specification {
     display: flex;
     align-items: center;
-    margin-bottom: $heading-bottom-margin;
+    margin-bottom: $heading-bottom-margin-big; //may need to change as li are added
   }
 
   &__label {
     letter-spacing: $letter-spacing-wide;
+    font-size: 2.3rem;
+    font-weight: 600;
   }
 
   &__input {
@@ -24,7 +27,18 @@
     width: 25rem;
   }
 
+  &__checkboxes {
+    margin-left: 10%;
+  }
+
   &__checkbox {
+    margin-bottom: $heading-bottom-margin;
+
+    &--instructions {
+      font-size: 2.3rem;
+      font-weight: 400;
+      margin-bottom: $heading-bottom-margin;
+    }
 
     &-label {
       margin-left: 1.8rem;
@@ -48,7 +62,6 @@
     &-btn {
       height: 2.8rem;
       width: 2.8rem;
-      // background-color: $base-red;
       border-radius: 50%;
       display: inline-block;
       position: absolute;
@@ -75,5 +88,15 @@
 
   &__checkbox-input:checked~&__checkbox-label &__checkbox-btn::after {
     opacity: 1;
+  }
+
+  &__button {
+    height: 4rem;
+    width: 16rem;
+    background-color: $black-accent;
+    color: $lightest-gray;
+    border-radius: 3rem;
+    font-size: 1.8rem;
+    margin: 1rem 5%;
   }
 }
