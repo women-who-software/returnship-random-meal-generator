@@ -1,0 +1,13 @@
+.header {
+  display: flex;
+  padding: 3rem 0;
+  background-color: $base-gray;
+
+  &-primary {
+    color: #A10115;
+    font-size: 6.8rem;
+    position: relative;
+    top: 12.3rem;
+    left: -17.9rem;
+  }
+}

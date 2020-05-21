@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Home from "../Home/Home";
 import {
   IoLogoPinterest,
   IoLogoTwitter,
@@ -7,7 +8,6 @@ import {
 import { MdEmail } from 'react-icons/md';
 import { FaFacebookMessenger } from 'react-icons/fa';
 import Logo from '../../assets/plate.opt.svg';
-import './App.scss'
 // import { render } from '@testing-library/react';
 
 class App extends Component {
@@ -18,19 +18,26 @@ class App extends Component {
   render() {
     return (
       <>
-        <header>
-          <img src={Logo} alt=''/>
-          <h1>Recipe Roulette</h1>
+        <header className="header">
+          <img
+            src={Logo}
+            alt="Plate setting image for a logo"
+            className="header__logo"
+          />
+          <h1 className="header-primary">Tasty Temptations</h1>
         </header>
-        <footer>
-          <IoLogoPinterest/>
-          <IoLogoTwitter/>
-          <IoLogoFacebook/>
-          <MdEmail/>
-          <FaFacebookMessenger/>
+        <main>
+          <Home />
+        </main>
+        <footer className="footer">
+          <IoLogoPinterest className="footer__img" />
+          <IoLogoTwitter className="footer__img" />
+          <IoLogoFacebook className="footer__img" />
+          <MdEmail className="footer__img" />
+          <FaFacebookMessenger className="footer__img" />
         </footer>
       </>
-    )
+    );
   }
 }
 
