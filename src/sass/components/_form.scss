@@ -1,17 +1,17 @@
 .search-form {
-  margin: 5%;
-  font-size: 2.1rem;
+  margin: 2% 5%;
+  font-size: 1.8rem;
   width: 49%;
 
   &--specification {
     display: flex;
     align-items: center;
-    margin-bottom: $heading-bottom-margin-big; //may need to change as li are added
+    margin-bottom: $heading-bottom-margin-med; //may need to change as li are added
   }
 
   &__label {
     letter-spacing: $letter-spacing-wide;
-    font-size: 2.3rem;
+    font-size: 2.1rem;
     font-weight: 600;
   }
 
@@ -23,7 +23,7 @@
     color: $base-gray;
     height: 3rem;
     letter-spacing: $letter-spacing-mild;
-    padding-left: .8rem;
+    padding-left: 1rem;
     width: 25rem;
   }
 
@@ -35,7 +35,7 @@
     margin-bottom: $heading-bottom-margin;
 
     &--instructions {
-      font-size: 2.3rem;
+      font-size: 2.1rem;
       font-weight: 400;
       margin-bottom: $heading-bottom-margin;
     }
@@ -60,8 +60,8 @@
     }
 
     &-btn {
-      height: 2.8rem;
-      width: 2.8rem;
+      height: 2.6rem;
+      width: 2.6rem;
       border-radius: 50%;
       display: inline-block;
       position: absolute;
@@ -91,12 +91,12 @@
   }
 
   &__button {
-    height: 4rem;
-    width: 16rem;
+    height: 3rem;
+    width: 11rem;
     background-color: $black-accent;
     color: $lightest-gray;
     border-radius: 3rem;
     font-size: 1.8rem;
-    margin: 1rem 5%;
+    margin: 1rem 10%;
   }
 }
