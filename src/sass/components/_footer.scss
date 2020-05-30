@@ -1,11 +1,18 @@
 .footer {
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  padding: 3rem;
+  position: fixed;
+  top: 95%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  &__links {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 3rem;
+  }
 
   &__img {
-    height: 3rem;
+    height: 2.5rem;
     width: auto;
     padding: 0 1rem;
   }
