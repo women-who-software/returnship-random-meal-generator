@@ -2,30 +2,17 @@
   position: relative;
 
   &__container {
-    // position: relative;
     width: 100%;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, 5%);
-    // display: table;
-    // display: inline-block;
-
-    // flex-direction: column;
-    // align-items: flex-start; in both ,home and container - neither work
-
-    // display: flex;
-    // justify-content: end;
-    // align-items: center;
   }
 
   &__article--form {
     height: 100%;
     width: 40%;
     display: inline-block;
-    // display: table-cell;
-    // height: 100%;
-    // align-self: flex-start;
   }
 
   &__article--info {
@@ -34,15 +21,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    // transform: translate(-50%, -50%);
     transform: translate(-20%, -36%);
-
-
-    // display: inline-block;
-    //above works with first 2 lines of instructions and with
-
-    // display: table-cell;
-    // height: 100%;
 
     &-graphic {
       float: left;
@@ -52,24 +31,17 @@
       margin: 2rem;
     }
 
-    //outer container for shape and img - might delete
 
     &-shape {
-
       height: 30rem;
       width: 30rem;
       border-radius: 50%;
       background-color: $base-orange;
-      // position: absolute;
-      // top: 41%;
-      // left: 42%;
-      // z-index: -1;
     }
 
     &-img {
       height: 26rem;
       width: 24rem;
-      // margin-left: 18%;
       z-index: 5;
       position: absolute;
       top: 8%;
@@ -79,58 +51,6 @@
     &-instructions {
       font-size: 2.8rem;
       margin: 5%;
-      // width: 40%;
-      // margin-left: 60%;
-
-      // border-radius: 50%;
     }
-
-    // p tag outside graphic div
   }
-
-
-
-
 }
-
-// .home {
-//   display: flex;
-
-//   align-items: center;//not working the way I intended
-
-
-//   &__form {
-//     // float: left;
-//     display: inline-block;
-//     width: 40%;
-//   }
-
-//   &__article {
-//     width: 35%;
-//     position: relative;
-
-// .home__article--background-shape {
-//   // display: inline-block;
-//   height: 30rem;
-//   width: 30rem;
-//   border-radius: 50%;
-//   background-color: $base-orange;
-// }
-
-// .home__article--img {
-//   // display: inline-block;
-//   height: 26rem;
-//   width: 24rem;
-//   // position: absolute;
-//   // top: 2.4rem;
-//   // left: 4rem;
-// }
-
-//     &--instructions {
-//       display: inline-block;
-//       width: 40%;
-//     }
-//   }
-
-
-// }
