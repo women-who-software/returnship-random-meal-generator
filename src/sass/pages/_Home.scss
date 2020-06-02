@@ -1,0 +1,56 @@
+.home {
+  position: relative;
+
+  &__container {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 5%);
+  }
+
+  &__article--form {
+    height: 100%;
+    width: 40%;
+    display: inline-block;
+  }
+
+  &__article--info {
+    height: 100%;
+    width: 55%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-20%, -36%);
+
+    &-graphic {
+      float: left;
+      // display: flex;
+      position: relative;
+      shape-outside: circle();
+      margin: 2rem;
+    }
+
+
+    &-shape {
+      height: 30rem;
+      width: 30rem;
+      border-radius: 50%;
+      background-color: $base-orange;
+    }
+
+    &-img {
+      height: 26rem;
+      width: 24rem;
+      z-index: 5;
+      position: absolute;
+      top: 8%;
+      left: 16%;
+    }
+
+    &-instructions {
+      font-size: 2.8rem;
+      margin: 5%;
+    }
+  }
+}

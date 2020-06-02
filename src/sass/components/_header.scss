@@ -1,13 +1,19 @@
 .header {
   display: flex;
-  padding: 3rem 0;
+  padding: 1.5rem 0;
   background-color: $base-gray;
+  margin-bottom: $heading-bottom-margin-med;
 
   &-primary {
     color: #A10115;
-    font-size: 6.8rem;
+    font-size: 6rem;
     position: relative;
-    top: 12.3rem;
-    left: -17.9rem;
+    top: 4.3rem;
+    left: -11rem;
+  }
+
+  &__logo {
+    height: 15rem;
+    width: auto;
   }
 }

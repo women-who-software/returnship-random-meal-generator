@@ -30,11 +30,13 @@ class App extends Component {
           <Home />
         </main>
         <footer className="footer">
-          <IoLogoPinterest className="footer__img" />
-          <IoLogoTwitter className="footer__img" />
-          <IoLogoFacebook className="footer__img" />
-          <MdEmail className="footer__img" />
-          <FaFacebookMessenger className="footer__img" />
+          <section className="footer__links">
+            <IoLogoPinterest className="footer__img" />
+            <IoLogoTwitter className="footer__img" />
+            <IoLogoFacebook className="footer__img" />
+            <MdEmail className="footer__img" />
+            <FaFacebookMessenger className="footer__img" />
+          </section>
         </footer>
       </>
     );

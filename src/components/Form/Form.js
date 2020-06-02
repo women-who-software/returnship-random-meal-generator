@@ -1,11 +1,12 @@
 import React from "react";
+import { IoMdCheckmark } from "react-icons/io";
 
 const Form = () => {
   return (
     <form className="search-form">
       <div className="search-form--specification">
         <label for="ingredient" className="search-form__label">
-          Ingredients:
+          Ingredient:
         </label>
         <input
           id="ingredient"
@@ -13,63 +14,83 @@ const Form = () => {
           placeholder="eggs, spinach"
           type="text"
         />
+        <ul className="search-form--ingredient-list"></ul>
       </div>
       <div className="search-form__checkbox--container">
-        <div className="search-form__checkbox--gluten-free">
-          <input
-            id="gluten-free"
-            className="search-form__checkbox-input"
-            type="checkbox"
-          />
-          <label for="gluten-free" className="search-form__checkbox-label">
-            Gluten Free
-          </label>
+        <h3 className="search-form__checkbox--instructions">
+          Click to select dietary restrictions:
+        </h3>
+        <div className="search-form__checkboxes">
+          <div className="search-form__checkbox">
+            <input
+              id="gluten-free"
+              className="search-form__checkbox-input"
+              type="checkbox"
+            />
+            <label for="gluten-free" className="search-form__checkbox-label">
+              <span className="search-form__checkbox-btn search-form__checkbox-org"></span>
+              Gluten Free
+            </label>
+          </div>
+          <div className="search-form__checkbox">
+            <input
+              id="dairy-free"
+              className="search-form__checkbox-input"
+              type="checkbox"
+            />
+            <label for="dairy-free" className="search-form__checkbox-label">
+              <span className="search-form__checkbox-btn search-form__checkbox-red"></span>
+              Dairy Free
+            </label>
+          </div>
+          <div className="search-form__checkbox">
+            <input
+              id="pescatarian"
+              className="search-form__checkbox-input"
+              type="checkbox"
+            />
+            <label for="pescatarian" className="search-form__checkbox-label">
+              <span className="search-form__checkbox-btn search-form__checkbox-gry"></span>
+              Pescatarian
+            </label>
+          </div>
+          <div className="search-form__checkbox">
+            <input
+              id="vegetarian"
+              className="search-form__checkbox-input"
+              type="checkbox"
+            />
+            <label for="vegetarian" className="search-form__checkbox-label">
+              <span className="search-form__checkbox-btn search-form__checkbox-org"></span>
+              Vegetarian
+            </label>
+          </div>
+          <div className="search-form__checkbox">
+            <input
+              id="vegan"
+              className="search-form__checkbox-input"
+              type="checkbox"
+            />
+            <label for="vegan" className="search-form__checkbox-label">
+              <span className="search-form__checkbox-btn search-form__checkbox-red"></span>
+              Vegan
+            </label>
+          </div>
+          <div className="search-form__checkbox">
+            <input
+              id="keto"
+              className="search-form__checkbox-input"
+              type="checkbox"
+            />
+            <label for="keto" className="search-form__checkbox-label">
+              <span className="search-form__checkbox-btn search-form__checkbox-gry"></span>
+              Keto
+            </label>
+          </div>
         </div>
-        <div className="search-form__checkbox--dairy-free">
-          <input
-            id="dairy-free"
-            className="search-form__checkbox-input"
-            type="checkbox"
-          />
-          <label for="dairy-free" className="search-form__checkbox-label">
-            Dairy Free
-          </label>
-        </div>
-        <div className="search-form__checkbox--pescatarian">
-          <input
-            id="pescatarian"
-            className="search-form__checkbox-input"
-            type="checkbox"
-          />
-          <label for="pescatarian" className="search-form__checkbox-label">
-            Pescatarian
-          </label>
-        </div>
-        <div className="search-form__checkbox--vegetarian">
-          <input
-            id="vegetarian"
-            className="search-form__checkbox-input"
-            type="checkbox"
-          />
-          <label for="vegetarian" className="search-form__checkbox-label">
-            Vegetarian
-          </label>
-        </div>
-        <div className="search-form__checkbox--vegan">
-          <input id="vegan" className="search-form__checkbox-input" type="checkbox" />
-          <label for="vegan" className="search-form__checkbox-label">
-            Vegan
-          </label>
-        </div>
-        <div className="search-form__checkbox--keto">
-          <input id="keto" className="search-form__checkbox-input" type="checkbox" />
-          <label for="keto" className="search-form__checkbox-label">
-            Keto
-          </label>
-        </div>
-        <div className="search-form__button--container">
-          <button className="search-form__button">Submit</button>
-        </div>
+        <button className="search-form__button">Submit</button>
+
+        {/* <div className="search-form__button--container"></div> */}
       </div>
     </form>
   );
